@@ -1,13 +1,16 @@
 # General
 ## Install
 Clone it
-`git clone git@github.com:schulerjoe/vim.git $HOME/.vim`
+
+    git clone git@github.com:schulerjoe/vim.git $HOME/.vim
 
 Clone Vundle plugin manager
-`git clone git@github.com:gmarik/Vundle.vim.git $HOME/.vim/bundle/vundle`
+
+    git clone git@github.com:gmarik/Vundle.vim.git $HOME/.vim/bundle/vundle
 
 Create symlink
-`ln -s $HOME/.vim/vimrc $HOME/.vimrc`
+
+    ln -s $HOME/.vim/vimrc $HOME/.vimrc
 
 Launch `vim` and run `:PluginInstall`
 
@@ -15,8 +18,9 @@ Launch `vim` and run `:PluginInstall`
 Launch `vim` and run `:PluginUpdate`
 
 ## Adding a new plugin
-Just make a new entry in the `.vimrc` like:
-`Plugin '%GITHUBUSER%/%REPOSITORY%', {'name': '%FOLDER%'}`
+Just add a new entry in the `.vimrc` between `call vundle#begin()` and `call vundle#end()`
+
+    Plugin '%GITHUBUSER%/%REPOSITORY%', {'name': '%FOLDER%'}
 
 And launch `vim` and run `:PluginUpdate`
 
