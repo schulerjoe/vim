@@ -1,46 +1,32 @@
 # General
 ## Install
+Clone it
+`git clone git@github.com:schulerjoe/vim.git $HOME/.vim`
 
-    git clone git@github.com:schulerjoe/vim-setup.git $HOME/.vim
+Clone Vundle plugin manager
+`git clone git@github.com:gmarik/Vundle.vim.git $HOME/.vim/bundle/vundle`
 
-Create symlink:
+Create symlink
+`ln -s $HOME/.vim/vimrc $HOME/.vimrc`
 
-    ln -s $HOME/.vim/vimrc $HOME/.vimrc
+Launch `vim` and run `:PluginInstall`
 
-Switch to _$HOME/.vim_ directory and fetch submodules:
-
-    cd $HOME/.vim
-    git submodule init
-    git submodule update
-
-## Update
-
-    cd $HOME/.vim
-    git submodule init
-    git submodule update
-
-## Upgrade
-If you want to upgrade all plugins, pull master for each bundle:
-
-    git submodule foreach git pull origin master
+## Update plugins
+Launch `vim` and run `:PluginUpdate`
 
 ## Adding a new plugin
+Just make a new entry in the `.vimrc` like:
+`Plugin '%GITHUBUSER%/%REPOSITORY%', {'name': '%FOLDER%'}`
 
-    cd $HOME/.vim
-    git submodule add -f $PATH_TO_GIT_REPO ./bundle/$LOCAL_NAME
-    git add .
-    # update README.md
-    git commit -am"your message"
+And launch `vim` and run `:PluginUpdate`
 
 # PLUGINS
 ## MANAGER
-### pathogen
-* source: https://github.com/tpope/vim-pathogen
-* directory: ./bundle/pathogen
+### vundle
+* source: https://github.com/gmarik/Vundle.vim
+* directory: ./bundle/vundle
 
-Manage your 'runtimepath' with ease. In practical terms, pathogen.vim makes it
-super easy to install plugins and runtime files in their own private
-directories.
+TODO
 
 ## GENERAL
 ### The Silver Searcher

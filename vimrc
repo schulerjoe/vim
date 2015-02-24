@@ -20,17 +20,49 @@
 """"""""""""""""""""""""""""""""""""""""""""""""
 " PLUGIN MANAGER
 """"""""""""""""""""""""""""""""""""""""""""""""
-" Use Pathogen plugin manager, Keep each plugin in its own git submodule
-call pathogen#infect()
-call pathogen#helptags()
+" Required by Vundle plugin manager
+set nocompatible              " be iMproved
+filetype off                  " required to be off by Vundle
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/vundle
+
+call vundle#begin()
+
+" let Vundle manage Vundle
+Plugin 'gmarik/Vundle.vim', {'name': 'vundle'}
+
+Plugin 'cschlueter/vim-wombat', {'name': 'colors_wombat'}
+Plugin 'chriskempson/vim-tomorrow-theme', {'name': 'colors_tomoroow'}
+Plugin 'junegunn/seoul256.vim', {'name': 'colors_seoul256'}
+
+Plugin 'scrooloose/syntastic', {'name': 'syntax_syntastic'}
+Plugin 'vim-scripts/nginx.vim', {'name': 'syntax_nginx'}
+
+Plugin 'bling/vim-airline', {'name': 'statusline_airline'}
+Plugin 'edkolev/tmuxline.vim', {'name': 'statusline_tmuxline'}
+
+
+Plugin 'vim-scripts/VimRepress', {'name': 'general_VimRepress'}
+Plugin 'vim-scripts/EasyGrep', {'name': 'general_EasyGrep'}
+Plugin 'vim-scripts/TwitVim', {'name': 'general_TwitVim'}
+Plugin 'tpope/vim-fugitive', {'name': 'general_fugitive'}
+Plugin 'vim-scripts/TaskList.vim', {'name': 'general_TaskList'}
+Plugin 'vim-scripts/file-line', {'name': 'general_file-line'}
+Plugin 'mattn/gist-vim', {'name': 'general_gist'}
+Plugin 'vim-scripts/taglist.vim', {'name': 'general_taglist'}
+Plugin 'scrooloose/nerdtree', {'name': 'general_nerdtree'}
+Plugin 'mattn/webapi-vim', {'name': 'general_webapi'}
+Plugin 'kien/ctrlp.vim', {'name': 'general_ctrlp'}
+Plugin 'duff/vim-bufonly', {'name': 'general_bufonly'}
+Plugin 'rking/ag.vim', {'name': 'general_ag'}
+Plugin 'tsaleh/vim-align', {'name': 'general_align'}
+
+call vundle#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " GENERAL
 """"""""""""""""""""""""""""""""""""""""""""""""
-" Disable vi-compatibility
-set nocompatible
-
 " Necessary to show Unicode glyphs
 set encoding=utf-8
 
