@@ -66,9 +66,6 @@ call vundle#end()
 """"""""""""""""""""""""""""""""""""""""""""""""
 " GENERAL
 """"""""""""""""""""""""""""""""""""""""""""""""
-" Necessary to show Unicode glyphs
-set encoding=utf-8
-
 " Explicitly tell Vim that the terminal supports 256 colors
 set t_Co=256
 
