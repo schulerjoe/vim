@@ -30,33 +30,33 @@ set rtp+=~/.vim/bundle/vundle
 call vundle#begin()
 
 " let Vundle manage Vundle
-Plugin 'gmarik/Vundle.vim', {'name': 'vundle'}
+Plugin 'git@github.com:gmarik/Vundle.vim.git', {'name': 'vundle'}
 
-Plugin 'cschlueter/vim-wombat', {'name': 'colors_wombat'}
-Plugin 'chriskempson/vim-tomorrow-theme', {'name': 'colors_tomoroow'}
-Plugin 'junegunn/seoul256.vim', {'name': 'colors_seoul256'}
+Plugin 'git@github.com:cschlueter/vim-wombat.git', {'name': 'colors_wombat'}
+Plugin 'git@github.com:chriskempson/vim-tomorrow-theme.git', {'name': 'colors_tomoroow'}
+Plugin 'git@github.com:junegunn/seoul256.vim.git', {'name': 'colors_seoul256'}
 
-Plugin 'scrooloose/syntastic', {'name': 'syntax_syntastic'}
-Plugin 'vim-scripts/nginx.vim', {'name': 'syntax_nginx'}
+Plugin 'git@github.com:scrooloose/syntastic.git', {'name': 'syntax_syntastic'}
+Plugin 'git@github.com:vim-scripts/nginx.vim.git', {'name': 'syntax_nginx'}
 
-Plugin 'bling/vim-airline', {'name': 'statusline_airline'}
-Plugin 'edkolev/tmuxline.vim', {'name': 'statusline_tmuxline'}
+Plugin 'git@github.com:bling/vim-airline.git', {'name': 'statusline_airline'}
+Plugin 'git@github.com:edkolev/tmuxline.vim.git', {'name': 'statusline_tmuxline'}
 
 
-Plugin 'vim-scripts/VimRepress', {'name': 'general_VimRepress'}
-Plugin 'vim-scripts/EasyGrep', {'name': 'general_EasyGrep'}
-Plugin 'vim-scripts/TwitVim', {'name': 'general_TwitVim'}
-Plugin 'tpope/vim-fugitive', {'name': 'general_fugitive'}
-Plugin 'vim-scripts/TaskList.vim', {'name': 'general_TaskList'}
-Plugin 'vim-scripts/file-line', {'name': 'general_file-line'}
-Plugin 'mattn/gist-vim', {'name': 'general_gist'}
-Plugin 'vim-scripts/taglist.vim', {'name': 'general_taglist'}
-Plugin 'scrooloose/nerdtree', {'name': 'general_nerdtree'}
-Plugin 'mattn/webapi-vim', {'name': 'general_webapi'}
-Plugin 'kien/ctrlp.vim', {'name': 'general_ctrlp'}
-Plugin 'duff/vim-bufonly', {'name': 'general_bufonly'}
-Plugin 'rking/ag.vim', {'name': 'general_ag'}
-Plugin 'tsaleh/vim-align', {'name': 'general_align'}
+Plugin 'git@github.com:vim-scripts/VimRepress.git', {'name': 'general_VimRepress'}
+Plugin 'git@github.com:vim-scripts/EasyGrep.git', {'name': 'general_EasyGrep'}
+Plugin 'git@github.com:vim-scripts/TwitVim.git', {'name': 'general_TwitVim'}
+Plugin 'git@github.com:tpope/vim-fugitive.git', {'name': 'general_fugitive'}
+Plugin 'git@github.com:vim-scripts/TaskList.vim.git', {'name': 'general_TaskList'}
+Plugin 'git@github.com:vim-scripts/file-line.git', {'name': 'general_file-line'}
+Plugin 'git@github.com:mattn/gist-vim.git', {'name': 'general_gist'}
+Plugin 'git@github.com:vim-scripts/taglist.vim.git', {'name': 'general_taglist'}
+Plugin 'git@github.com:scrooloose/nerdtree.git', {'name': 'general_nerdtree'}
+Plugin 'git@github.com:mattn/webapi-vim.git', {'name': 'general_webapi'}
+Plugin 'git@github.com:kien/ctrlp.vim.git', {'name': 'general_ctrlp'}
+Plugin 'git@github.com:duff/vim-bufonly.git', {'name': 'general_bufonly'}
+Plugin 'git@github.com:rking/ag.vim.git', {'name': 'general_ag'}
+Plugin 'git@github.com:tsaleh/vim-align.git', {'name': 'general_align'}
 
 call vundle#end()
 
