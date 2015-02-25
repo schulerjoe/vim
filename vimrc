@@ -24,9 +24,10 @@
 set nocompatible              " be iMproved
 filetype off                  " required to be off by Vundle
 
-" set the runtime path to include Vundle and initialize
+" set the runtime path to include Vundle
 set rtp+=~/.vim/bundle/vundle
 
+" initialize Vundle
 call vundle#begin()
 
 " let Vundle manage Vundle
@@ -110,6 +111,7 @@ set incsearch  " Incremental search
 set ignorecase " Override 'ignorecase' if search pattern contains upper case characters
 set smartcase  " When searching try to be smart about cases
 set hlsearch   " Search highlighting
+
 " Shows all occurences of the underlying word
 nnoremap * :set hls<CR>:exec "let @/='\\<".expand("<cword>")."\\>'"<CR>
 
@@ -142,7 +144,7 @@ if has('gui_running')
 
 end
 
-" Set font according to operating system
+" Set font, always use patched DejaVu Sans Mono
 if os == "darwin"
     " default
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h11
@@ -178,8 +180,8 @@ set tabstop=8     " Real tabs should be 8, and they will show with set list on
 set softtabstop=2 " When hitting tab or backspace, how many spaces should a tab be (see expandtab)
 
 " Text wrap
-set nowrap      " do not wrap line
-set textwidth=0 " No autowrapping
+set nowrap        " do not wrap line
+set textwidth=0   " No autowrapping
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
@@ -193,6 +195,10 @@ autocmd FileType python set number
 
 " Ruby
 autocmd FileType ruby set number
+
+" Enable syntax highlighting for jquery files
+au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " MOVING AROUND, TABS, WINDOWS AND BUFFERS
@@ -261,6 +267,7 @@ if os == "Linux"
 endif
 
 let g:airline#extensions#tabline#enabled = 1
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " EDITING MAPPINGS
@@ -340,17 +347,10 @@ nmap <leader>a :Ag<cr>
 map <c-n> :NERDTreeToggle<CR>
 " Show hidden files (dotfiles)
 let NERDTreeShowHidden = 1
+
 " CtrlP
 " Quickly open
 map <leader>f :CtrlP<cr>
-
-" Colors
-hi MBENormal               guifg=#808080 guibg=fg
-hi MBEChanged              guifg=#CD5907 guibg=fg
-hi MBEVisibleNormal        guifg=#5DC2D6 guibg=fg
-hi MBEVisibleChanged       guifg=#F1266F guibg=fg
-hi MBEVisibleActiveNormal  guifg=#A6DB29 guibg=fg
-hi MBEVisibleActiveChanged guifg=#F1266F guibg=fg
 
 " BufOnly
 " Fast closing of all buffers expect current
@@ -377,10 +377,6 @@ map T :TlistToggle<CR>
 " disable mbe, because it confuses Gdiff, then get the status window and diff
 nmap <leader>gd :CMiniBufExplorer <cr> :Gstatus <cr><C-w><C-w> :Gdiff <cr>
 nmap <leader>gc :Gcommit<CR>
-
-" jQuery
-" Enable syntax highlighting
-au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 " Syntastic
 " Enable syntastic syntax checking for supported languages
