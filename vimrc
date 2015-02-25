@@ -35,6 +35,7 @@ Plugin 'git@github.com:gmarik/Vundle.vim.git', {'name': 'vundle'}
 Plugin 'git@github.com:cschlueter/vim-wombat.git', {'name': 'colors_wombat'}
 Plugin 'git@github.com:chriskempson/vim-tomorrow-theme.git', {'name': 'colors_tomoroow'}
 Plugin 'git@github.com:junegunn/seoul256.vim.git', {'name': 'colors_seoul256'}
+Plugin 'git@github.com:tomasr/molokai.git', {'name': 'colors_molokai'}
 
 Plugin 'git@github.com:scrooloose/syntastic.git', {'name': 'syntax_syntastic'}
 Plugin 'git@github.com:vim-scripts/nginx.vim.git', {'name': 'syntax_nginx'}
@@ -144,9 +145,13 @@ if has('gui_running')
     " Wombat theme
     "colorscheme wombat256
 
-    "Seoul256 theme
+    " Seoul256 theme
     "let g:seoul256_background = 233
     "colorscheme seoul256
+
+    " Molokai theme
+    "let g:molokai_original = 0
+    "colorscheme molokai
   else
     " Settings when running CLI
     "Tomorrow theme
@@ -156,9 +161,13 @@ if has('gui_running')
     " Wombat theme
     "colorscheme wombat256
 
-    "Seoul256 theme
+    " Seoul256 theme
     "let g:seoul256_background = 233
     "colorscheme seoul256
+
+    " Molokai theme
+    "let g:molokai_original = 0
+    "colorscheme molokai
 end
 
 " Set font according to operating system
