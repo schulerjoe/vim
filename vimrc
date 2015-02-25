@@ -240,14 +240,25 @@ set noshowmode      " Hide the default mode text (e.g. -- INSERT -- below the st
 " populate the g:airline_symbols dictionary with the powerline symbols
 let g:airline_powerline_fonts = 1
 
-" tmuxline customization
-let g:tmuxline_preset = {
+" tmuxline customization for Ubuntu
+if os == "Linux"
+  let g:tmuxline_preset = {
       \'a'    : '#S',
-      \'b'    : ['#(top -b -n1 | grep "Cpu" | cut -d "," -f 4 | cut -d " " -f 2,3) cpu', '#(uptime -p | cut -d "," -f 1)', '#(who | wc -l) users'],
+      \'b'    : ['#(top -b -n1 | grep "Cpu" | cut -d "," -f 4 | cut -d " " -f 2,3) cpu', '#(uptime -p | cut -d "," -f 1)', '#(who | wc -l | sed "s/ //g") users'],
       \'win'  : ['#I', '#W'],
       \'cwin' : ['#I', '#W',],
       \'y'    : '#(date "+%a %d/%m/%Y %T")',
       \'z'    : '#H'}
+  elseif os == "darwin"
+    " tmuxline customization for OSX
+    let g:tmuxline_preset = {
+        \'a'    : '#S',
+        \'b'    : ['#(who | wc -l | sed "s/ //g") users'],
+        \'win'  : ['#I', '#W'],
+        \'cwin' : ['#I', '#W',],
+        \'y'    : '#(date "+%a %d/%m/%Y %T")',
+        \'z'    : '#H'}
+endif
 
 let g:airline#extensions#tabline#enabled = 1
 
