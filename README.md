@@ -206,12 +206,8 @@ Lean & mean status/tabline for vim that's light as air
 Simple tmux statusline generator with support for powerline symbols and vim/airline/lightline statusline integration
 
 ## COLOR SCHEMES
-### Wombat (dark, high contrast)
-* source: https://github.com/cschlueter/vim-wombat
-* directory: ./bundle/colors_wombat
-
-### Tomorrow (dark, light, medium contrast)
-* source: https://github.com/chriskempson/tomorrow-theme/tree/master/vim
+### Tomorrow
+* source: https://github.com/chriskempson/tomorrow-theme/
 * directory: ./bundle/colors_tomorrow
 
 After having spent over five years using, tweaking and refining a personal
@@ -222,26 +218,10 @@ A theme should not get in your way but should aid your programming with easily
 identifiable colours that add meaning and enhance legibility. This was the main
 focus when developing Tomorrow.
 
-### Seoul256 (dark, light, low contrast)
-* source: https://github.com/junegunn/seoul256.vim
-* directory: ./bundle/colors_seoul256
-
-seoul256.vim is a low-contrast Vim color scheme based on Seoul Colors. Works on 256-color terminal or on GVim.
-
-### Molokai
-* source: https://github.com/tomasr/molokai
-* directory: ./bundle/colors_molokai
-
-Molokai is a Vim port of the monokai theme for TextMate originally created by Wimer Hazenberg.
-
-### Solarized (dark, light)
-* source: https://github.com/altercation/vim-colors-solarized
-* directory: ./bundle/colors_solarized
-
-Solarized is a sixteen color palette (eight monotones, eight accent colors) designed for use with terminal and gui applications.
-
 ## FONTS
 ### Deja Vu Sans Mono
 http://sourceforge.net/projects/dejavu/
 
 This font comes preinstalled in Ubuntu.
+
+For Powerline patched version check https://github.com/powerline/fonts

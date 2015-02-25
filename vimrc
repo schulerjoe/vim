@@ -1,7 +1,7 @@
 " vimrc
 "
 " Author:   Joe Schuler <josefschuler at gmail dot com>
-" Source:   https://github.com/schulerjoe/vim-setup
+" Source:   https://github.com/schulerjoe/vim
 "
 " Sections:
 "           -> Plugin Manager
@@ -32,19 +32,13 @@ call vundle#begin()
 " let Vundle manage Vundle
 Plugin 'git@github.com:gmarik/Vundle.vim.git', {'name': 'vundle'}
 
-Plugin 'git@github.com:cschlueter/vim-wombat.git', {'name': 'colors_wombat'}
 Plugin 'git@github.com:chriskempson/vim-tomorrow-theme.git', {'name': 'colors_tomoroow'}
-Plugin 'git@github.com:junegunn/seoul256.vim.git', {'name': 'colors_seoul256'}
-Plugin 'git@github.com:tomasr/molokai.git', {'name': 'colors_molokai'}
-Plugin 'git@github.com:altercation/vim-colors-solarized.git', {'name': 'colors_solarized'}
-Plugin 'git@github.com:chriskempson/base16-vim.git', {'name': 'colors_base16'}
 
 Plugin 'git@github.com:scrooloose/syntastic.git', {'name': 'syntax_syntastic'}
 Plugin 'git@github.com:vim-scripts/nginx.vim.git', {'name': 'syntax_nginx'}
 
 Plugin 'git@github.com:bling/vim-airline.git', {'name': 'statusline_airline'}
 Plugin 'git@github.com:edkolev/tmuxline.vim.git', {'name': 'statusline_tmuxline'}
-
 
 Plugin 'git@github.com:vim-scripts/VimRepress.git', {'name': 'general_VimRepress'}
 Plugin 'git@github.com:vim-scripts/EasyGrep.git', {'name': 'general_EasyGrep'}
@@ -135,54 +129,17 @@ endif
 syntax on
 
 " Colorschemes
-" Settings when running GUI
+" Settings when running GUI (MacVIM)
 if has('gui_running')
     " Tomorrow theme
-    set background=dark
-    colorscheme Tomorrow-Night-Bright
-
-    " Wombat theme
-    "colorscheme wombat256
-
-    " Seoul256 theme
-    "let g:seoul256_background = 233
-    "colorscheme seoul256
-
-    " Molokai theme
-    "let g:molokai_original = 0
-    "colorscheme molokai
-
-
-    " Solarized theme
-    "let g:solarized_termcolors=256
-    "set background=dark
-    "colorscheme solarized
+    colorscheme Tomorrow-Night-Eighties
 
   else
-    " Settings when running CLI
+    " Settings when running CLI (iTerm2, PuTTY or SecureCRT)
     "Tomorrow theme
     set background=dark
-    colorscheme Tomorrow-Night-Bright
+    colorscheme Tomorrow-Night-Eighties
 
-    " Wombat theme
-    "colorscheme wombat256
-
-    " Seoul256 theme
-    "let g:seoul256_background = 233
-    "colorscheme seoul256
-
-    " Molokai theme
-    "let g:molokai_original = 0
-    "colorscheme molokai
-
-    " Solarized theme
-    "let g:solarized_termcolors=256
-    "set background=dark
-    "colorscheme solarized
-
-    " base 16 theme
-    "set background=dark
-    "colorscheme base16-default
 end
 
 " Set font according to operating system
