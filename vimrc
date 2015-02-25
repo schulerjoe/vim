@@ -36,6 +36,7 @@ Plugin 'git@github.com:cschlueter/vim-wombat.git', {'name': 'colors_wombat'}
 Plugin 'git@github.com:chriskempson/vim-tomorrow-theme.git', {'name': 'colors_tomoroow'}
 Plugin 'git@github.com:junegunn/seoul256.vim.git', {'name': 'colors_seoul256'}
 Plugin 'git@github.com:tomasr/molokai.git', {'name': 'colors_molokai'}
+Plugin 'git@github.com:altercation/vim-colors-solarized.git', {'name': 'colors_solarized'}
 
 Plugin 'git@github.com:scrooloose/syntastic.git', {'name': 'syntax_syntastic'}
 Plugin 'git@github.com:vim-scripts/nginx.vim.git', {'name': 'syntax_nginx'}
@@ -152,11 +153,18 @@ if has('gui_running')
     " Molokai theme
     "let g:molokai_original = 0
     "colorscheme molokai
+
+
+    " Solarized theme
+    "let g:solarized_termcolors=256
+    "set background=dark
+    "colorscheme solarized
+
   else
     " Settings when running CLI
     "Tomorrow theme
-    set background=dark
-    colorscheme Tomorrow-Night-Bright
+    "set background=dark
+    "colorscheme Tomorrow-Night-Bright
 
     " Wombat theme
     "colorscheme wombat256
@@ -168,6 +176,11 @@ if has('gui_running')
     " Molokai theme
     "let g:molokai_original = 0
     "colorscheme molokai
+
+    " Solarized theme
+    let g:solarized_termcolors=256
+    set background=dark
+    colorscheme solarized
 end
 
 " Set font according to operating system

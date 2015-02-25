@@ -228,44 +228,20 @@ focus when developing Tomorrow.
 
 seoul256.vim is a low-contrast Vim color scheme based on Seoul Colors. Works on 256-color terminal or on GVim.
 
+### Molokai
+* source: https://github.com/tomasr/molokai
+* directory: ./bundle/colors_molokai
+
+Molokai is a Vim port of the monokai theme for TextMate originally created by Wimer Hazenberg.
+
+### Solarized (dark, light)
+* source: https://github.com/altercation/vim-colors-solarized
+* directory: ./bundle/colors_solarized
+
+Solarized is a sixteen color palette (eight monotones, eight accent colors) designed for use with terminal and gui applications.
+
 ## FONTS
-### default's
-#### Mac OSX
-* Menlo
-
-other option:
-Source Code Pro
-https://blogs.adobe.com/typblography/2012/09/source-code-pro.html
-
-#### Linux
-* Mensch
-
-### About Fonts
-#### Inconsolata
-http://www.levien.com/type/myfonts/inconsolata.html
-
-It is a monospace font, designed for code listings and the like, in print.
-There are a great many "programmer fonts," designed primarily for use on the
-screen, but in most cases do not have the attention to detail for high
-resolution rendering.
-
-#### Deja Vu Sans Mono
+### Deja Vu Sans Mono
 http://sourceforge.net/projects/dejavu/
 
 This font comes preinstalled in Ubuntu.
-
-#### Anonymous Pro
-http://www.ms-studio.com/FontSales/anonymouspro.html
-
-Anonymous Pro (2009) is a family of four fixed-width fonts designed especially
-with coding in mind. Characters that could be mistaken for one another (O, 0,
-I, l, 1, etc.) have distinct shapes to make them easier to tell apart in the
-context of source code.
-
-#### Mensch
-http://robey.lag.net/2010/06/21/mensch-font.html
-
-The latest MacOS release (10.6, or “Snow Leopard”) comes with a new monospace
-font. It’s called “Menlo” and it’s a slightly modified form of the standard
-Linux font (with appropriately weightily Linux name) “DejaVu Sans Serif Mono”,
-which is itself an updated form of Bitstream Vera Sans Mono.
