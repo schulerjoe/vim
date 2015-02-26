@@ -354,7 +354,7 @@ map <leader>f :CtrlP<cr>
 
 " BufOnly
 " Fast closing of all buffers expect current
-nmap <leader>o :BufOnly<cr>:MBEOpen<cr>
+nmap <leader>o :BufOnly<cr>
 
 " TwitVIM
 " Configuration
@@ -374,8 +374,7 @@ let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 map T :TlistToggle<CR>
 
 " Fugitive
-" disable mbe, because it confuses Gdiff, then get the status window and diff
-nmap <leader>gd :CMiniBufExplorer <cr> :Gstatus <cr><C-w><C-w> :Gdiff <cr>
+nmap <leader>gd :Gstatus <cr><C-w><C-w> :Gdiff <cr>
 nmap <leader>gc :Gcommit<CR>
 
 " Syntastic
