@@ -55,6 +55,7 @@ Plugin 'git@github.com:kien/ctrlp.vim.git', {'name': 'general_ctrlp'}
 Plugin 'git@github.com:duff/vim-bufonly.git', {'name': 'general_bufonly'}
 Plugin 'git@github.com:rking/ag.vim.git', {'name': 'general_ag'}
 Plugin 'git@github.com:tsaleh/vim-align.git', {'name': 'general_align'}
+Plugin 'git@github.com:tpope/vim-surround.git', {'name': 'general_surround'}
 
 call vundle#end()
 
