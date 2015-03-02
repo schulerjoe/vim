@@ -267,6 +267,7 @@ if os == "Linux"
         \'z'    : '#H'}
 endif
 
+" Enable tabline
 let g:airline#extensions#tabline#enabled = 1
 
 
