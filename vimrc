@@ -279,6 +279,9 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" Fast sudo saving
+nmap <leader>e :w !sudo tee  % > /dev/null<cr>
+
 " Fast quit
 nmap <leader>q :qa<cr>
 
