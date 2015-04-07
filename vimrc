@@ -245,8 +245,12 @@ set laststatus=2    " Always show statusline
 set noshowmode      " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
 " Airline
+" General
 " populate the g:airline_symbols dictionary with the powerline symbols
 let g:airline_powerline_fonts = 1
+
+" show the full path in statusline
+let g:airline_section_c = '%F'
 
 " tabline
 " Enable tabline
