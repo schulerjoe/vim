@@ -244,10 +244,18 @@ autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 set laststatus=2    " Always show statusline
 set noshowmode      " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 
+" Airline
 " populate the g:airline_symbols dictionary with the powerline symbols
 let g:airline_powerline_fonts = 1
 
-" tmuxline customization
+" tabline
+" Enable tabline
+let g:airline#extensions#tabline#enabled = 1
+" Just show the filename (no path) in the tab
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" tmuxline
+" customization
 if os == "Linux"
   let g:tmuxline_preset = {
       \'a'    : '#S',
@@ -267,11 +275,6 @@ if os == "Linux"
         \'z'    : '#H'}
 endif
 
-" tabline
-" Enable tabline
-let g:airline#extensions#tabline#enabled = 1
-" Just show the filename (no path) in the tab
-let g:airline#extensions#tabline#fnamemod = ':t'
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " EDITING MAPPINGS
