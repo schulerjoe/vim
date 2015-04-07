@@ -347,7 +347,7 @@ nmap <silent> <leader>ss :setlocal spell!<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Ag
 " Fast searching
-nmap <leader>a :Ag<cr>
+nmap <leader>s :Ag<cr>
 
 " NERDTree
 " Open and close with Ctrl-n
