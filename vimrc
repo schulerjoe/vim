@@ -277,7 +277,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 " EDITING MAPPINGS
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Fast quit
-nmap <leader>q :qa<cr>
+nmap <leader>q :q<cr>
 
 " Fast saving
 nmap <leader>w :w!<cr>
