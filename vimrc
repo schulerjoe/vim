@@ -296,7 +296,7 @@ nmap <leader>p :set paste!<cr>
 
 " Cope (current list of errors)
 " Show
-nmap <leader>c :cope<cr>
+nmap <leader>c :copen<cr>
 " Don't show
 nmap <leader>C :ccl<cr>
 
@@ -305,10 +305,6 @@ nmap <leader>C :ccl<cr>
 :command Wq wq
 :command W w
 :command Q q
-
-" Shortcut for scripting calculations
-" Type 8*8<C-A> results in 8*8=64
-ino <C-A> <C-O>yiW<End>=<C-R>=<C-R>1<CR>
 
 " Clipboard
 if os == "darwin"
