@@ -1,4 +1,4 @@
-" vimrc
+" ~/.vimrc
 "
 " Author:   Joe Schuler <josefschuler at gmail dot com>
 " Source:   https://github.com/schulerjoe/vim
