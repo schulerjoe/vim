@@ -285,6 +285,9 @@ nmap <leader>w :w!<cr>
 " Fast sudo saving
 nmap <leader>e :w !sudo tee  % > /dev/null<cr>
 
+" Fast quit without saving
+nmap <leader>a :q!<cr>
+
 " Fast pasting
 nmap <leader>p :set paste!<cr>
 
