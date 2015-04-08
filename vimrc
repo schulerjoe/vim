@@ -8,7 +8,7 @@
 "           -> General
 "           -> VIM user interface
 "           -> Colors and Fonts
-"           -> Files, backups and undo
+"           -> Backup and undo
 "           -> Text, tab and indent related
 "           -> Filetype settings
 "           -> Moving around, tabs and buffers
@@ -158,17 +158,20 @@ endif
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-" FILES, BACKUPS AND UNDO
+" BACKUP AND UNDO
 """"""""""""""""""""""""""""""""""""""""""""""""
-" Turn backup off
-set nobackup
-set nowritebackup
-" set noswapfile
-set backupdir=/tmp
+" Backup
+" Enable backup files
+set backup
+" Set backup directory
+set backupdir=~/.vim/backups
+" Just before writing the file, a copy will be saved with timestamp
+autocmd BufWritePre * let &bex = '-' . strftime("%Y%m%d-%H%M%S") . '.vimbackup'
 
+" Undo
 " Persistent undo
 set undofile
-set undodir=$HOME/.vim/undo
+set undodir=~/.vim/undo
 set undolevels=500
 set undoreload=5000
 

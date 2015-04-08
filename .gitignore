@@ -2,3 +2,4 @@ twitter_account.vim
 .netrwhist
 bundle/
 backups/
+undo/
