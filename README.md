@@ -30,7 +30,16 @@ And launch `vim` and run `:PluginUpdate`
 * source: https://github.com/gmarik/Vundle.vim
 * directory: ./bundle/vundle
 
-TODO
+Vundle is short for Vim bundle and is a Vim plugin manager.
+
+Vundle allows you to...
+
+* keep track of and configure your plugins right in the .vimrc
+* install configured plugins (a.k.a. scripts/bundle)
+* update configured plugins
+* search by name all available Vim scripts
+* clean unused plugins up
+* run the above actions in a single keypress with interactive mode
 
 ## GENERAL
 ### The Silver Searcher
@@ -175,6 +184,12 @@ You get:
 
     foo    = 1
     foobar = 2
+
+### Surround
+* source: https://github.com/tpope/vim-surround
+* directory: ./bundle/general_surround
+
+Surround.vim is all about "surroundings": parentheses, brackets, quotes, XML tags, and more. The plugin provides mappings to easily delete, change and add such surroundings in pairs.
 
 ## SYNTAX
 ### Syntastic
