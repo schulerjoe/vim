@@ -13,12 +13,12 @@
 "           -> Filetype settings
 "           -> Moving around, tabs and buffers
 "           -> Status line
-"           -> Editing mappings
+"           -> Mappings
 "           -> Spell checking
 "           -> Plugin related
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-" PLUGIN MANAGER
+" Plugin Manager
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Required by Vundle plugin manager
 set nocompatible              " be iMproved
@@ -61,7 +61,7 @@ Plugin 'git@github.com:vim-scripts/dbext.vim.git', {'name': 'general_dbext'}
 call vundle#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-" GENERAL
+" General
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Explicitly tell Vim that the terminal supports 256 colors
 set t_Co=256
@@ -100,7 +100,7 @@ let os = substitute(system('uname'), "\n", "", "")
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-" VIM USER INTERFACE
+" VIM user interface
 """"""""""""""""""""""""""""""""""""""""""""""""
 " cmd completion enhanced mode
 set wildmenu
@@ -127,7 +127,7 @@ endif
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-" COLORS AND FONTS
+" Colors and fonts
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax on
@@ -158,7 +158,7 @@ endif
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-" BACKUP AND UNDO
+" Backup and undo
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Backup
 " Enable backup files
@@ -177,7 +177,7 @@ set undoreload=5000
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-" TEXT, TAB AND INDENT RELATED
+" Text, tab and indent related
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Tab behaviour
 set expandtab     " Use spaces instead of tabs
@@ -190,7 +190,7 @@ set textwidth=0   " No autowrapping
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-" FILETYPE SETTINGS
+" Filetype settings
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Detect filetype, load optional filetype plugins, load optional indent rule file
 filetype plugin indent on
@@ -206,7 +206,7 @@ au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-" MOVING AROUND, TABS, WINDOWS AND BUFFERS
+" Moving around, tabs, windows and buffers
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Do not skip lines when 'wrap' is set
 nnoremap j gj
@@ -242,7 +242,7 @@ autocmd BufWritePost * if &diff == 1 | diffupdate | endif
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-" STATUSLINE
+" Statusline
 """"""""""""""""""""""""""""""""""""""""""""""""
 " General
 set laststatus=2    " Always show statusline
@@ -285,7 +285,7 @@ endif
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-" EDITING MAPPINGS
+" Mappings
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Fast quit
 nmap <leader>q :q<cr>
@@ -343,7 +343,7 @@ autocmd BufWrite * :call DeleteTrailingWS()
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-" SPELL CHEKING
+" Spell checking
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Set spell language order
 set spelllang=de,en
@@ -353,7 +353,7 @@ nmap <silent> <leader>ss :setlocal spell!<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""
-" PLUGIN RELATED
+" Plugin related
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Ag
 " Fast searching
