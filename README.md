@@ -167,7 +167,7 @@ vimscript, so there's no need for C extensions, ruby support, et al.
 
 ### Align
 * source: https://github.com/tsaleh/vim-align
-* directory: ./bunde/syntax_align
+* directory: ./bundle/syntax_align
 
 Align text on arbitray symbols, i.e. '='.
 
@@ -190,6 +190,30 @@ You get:
 * directory: ./bundle/general_surround
 
 Surround.vim is all about "surroundings": parentheses, brackets, quotes, XML tags, and more. The plugin provides mappings to easily delete, change and add such surroundings in pairs.
+
+### dbext
+* source: https://github.com/vim-scripts/dbext.vim
+* directory: ./bundle/general_dbext
+
+This plugin contains functions/mappings/commands to enable Vim to access several databases.
+
+Current databases supported are:
+* ODBC / Perl DBI
+* Mysql
+* Oracle
+* Oracle Rdb (VMS)
+* SAP HANA
+* SAP Sybase SQL Anywhere (SA/ASA)
+* SAP Sybase IQ (ASA)
+* SAP Sybase Adaptive Server Enterprise (ASE)
+* SAP Sybase UltraLite (UL)
+* Microsoft SQL Server
+* IBM DB2
+* Interbase
+* SQLite
+* PostgreSQL
+* Ingres
+* Firebird
 
 ## SYNTAX
 ### Syntastic
