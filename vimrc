@@ -267,7 +267,7 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 if os == "Linux"
   let g:tmuxline_preset = {
       \'a'    : '#S',
-      \'b'    : ['#(top -b -n1 | grep "Cpu" | cut -d "," -f 4 | cut -d " " -f 3,4) cpu', '#(uptime -p | cut -d "," -f 1)', '#(who | wc -l | sed "s/ //g") users'],
+      \'b'    : ['#(top -b -n1 | grep "Cpu" | cut -d "," -f 4 | cut -d " " -f 2,3) cpu', '#(uptime -p | cut -d "," -f 1)', '#(who | wc -l | sed "s/ //g") users'],
       \'win'  : ['#I', '#W'],
       \'cwin' : ['#I', '#W',],
       \'y'    : '#(date "+%a %d/%m/%Y %T")',
