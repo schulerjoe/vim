@@ -33,7 +33,7 @@ call vundle#begin()
 " let Vundle manage Vundle
 Plugin 'git@github.com:gmarik/Vundle.vim.git', {'name': 'vundle'}
 
-Plugin 'git@github.com:chriskempson/vim-tomorrow-theme.git', {'name': 'colors_tomoroow'}
+Plugin 'git@github.com:chriskempson/vim-tomorrow-theme.git', {'name': 'colors_tomorow'}
 
 Plugin 'git@github.com:scrooloose/syntastic.git', {'name': 'syntax_syntastic'}
 Plugin 'git@github.com:vim-scripts/nginx.vim.git', {'name': 'syntax_nginx'}
