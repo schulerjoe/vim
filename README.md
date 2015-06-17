@@ -12,6 +12,9 @@ Create symlink
 
     ln -s $HOME/.vim/vimrc $HOME/.vimrc
 
+Create backup folder
+    mkdir $HOME/.vim/backups
+
 Launch `vim` and run `:PluginInstall`
 
 ## Update plugins
