@@ -1,20 +1,21 @@
 # General
 ## Install
 Clone it
-
-    git clone git@github.com:schulerjoe/vim.git $HOME/.vim
-
+```
+git clone git@github.com:schulerjoe/vim.git $HOME/.vim
+```
 Clone Vundle plugin manager
-
-    git clone git@github.com:gmarik/Vundle.vim.git $HOME/.vim/bundle/vundle
-
+```
+git clone git@github.com:gmarik/Vundle.vim.git $HOME/.vim/bundle/vundle
+```
 Create symlink
-
-    ln -s $HOME/.vim/vimrc $HOME/.vimrc
-
+```
+ln -s $HOME/.vim/vimrc $HOME/.vimrc
+```
 Create backup folder
-    mkdir $HOME/.vim/backups
-
+```
+mkdir $HOME/.vim/backups
+```
 Launch `vim` and run `:PluginInstall`
 
 ## Update plugins
@@ -98,9 +99,9 @@ can see exactly where the tag is located.
 * directory: ./bundle/general_file-line
 
 Allow files to be opened on a specific line with the following syntax:
-
-    path_to_file:NN
-
+```
+path_to_file:NN
+```
 where NN is the desired line number.
 
 ### gist-vim
@@ -175,18 +176,21 @@ vimscript, so there's no need for C extensions, ruby support, et al.
 Align text on arbitray symbols, i.e. '='.
 
 Example:
-
-    foo = 1
-    foobar = 2
+```
+foo = 1
+foobar = 2
+```
 
 Select in visual mode, then:
-
-    :Align =
+```
+:Align =
+```
 
 You get:
-
-    foo    = 1
-    foobar = 2
+```
+foo    = 1
+foobar = 2
+```
 
 ### Surround
 * source: https://github.com/tpope/vim-surround
