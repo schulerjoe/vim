@@ -37,6 +37,7 @@ Plugin 'git@github.com:chriskempson/vim-tomorrow-theme.git', {'name': 'colors_to
 
 Plugin 'git@github.com:scrooloose/syntastic.git', {'name': 'syntax_syntastic'}
 Plugin 'git@github.com:vim-scripts/nginx.vim.git', {'name': 'syntax_nginx'}
+Plugin 'git@github.com:docker/docker.git', {'name': 'syntax_docker', 'rtp': '/contrib/syntax/vim/'}
 
 Plugin 'git@github.com:bling/vim-airline.git', {'name': 'statusline_airline'}
 Plugin 'git@github.com:edkolev/tmuxline.vim.git', {'name': 'statusline_tmuxline'}

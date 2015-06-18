@@ -238,6 +238,12 @@ execute their script to find them.
 
 nginx.vim highlights configuration files for nginx, the high-performance web server
 
+### Docker
+* source: https://github.com/docker/docker/tree/master/contrib/syntax/vim
+* directory: ./bundle/syntax_docker
+
+Syntax highlighting for Dockerfiles
+
 ## STATUSLINE
 ### Airline
 * source: https://github.com/bling/vim-airline
