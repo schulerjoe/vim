@@ -12,9 +12,9 @@ Create symlink
 ```
 ln -s $HOME/.vim/vimrc $HOME/.vimrc
 ```
-Create backup folder
+Create backup and undo folder
 ```
-mkdir $HOME/.vim/backups
+mkdir $HOME/.vim/backups undo
 ```
 Launch `vim` and run `:PluginInstall`
 
