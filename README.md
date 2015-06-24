@@ -14,7 +14,8 @@ ln -s $HOME/.vim/vimrc $HOME/.vimrc
 ```
 Create backup and undo folder
 ```
-mkdir $HOME/.vim/backups undo
+mkdir $HOME/.vim/backups
+mkdir $HOME/.vim/undo
 ```
 Launch `vim` and run `:PluginInstall`
 
