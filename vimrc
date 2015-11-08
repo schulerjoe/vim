@@ -254,8 +254,8 @@ set noshowmode      " Hide the default mode text (e.g. -- INSERT -- below the st
 " populate the g:airline_symbols dictionary with the powerline symbols
 let g:airline_powerline_fonts = 1
 
-" show the full path in statusline
-let g:airline_section_c = '%F'
+" show the path in statusline relative to the current directory
+let g:airline_section_c = '%f'
 
 " tabline
 " Enable tabline
