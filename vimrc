@@ -97,6 +97,10 @@ set title
 " Check OS - needed for minor differences between OSX and Linux
 let os = substitute(system('uname'), "\n", "", "")
 
+" Always enable relative numbering
+set number
+set relativenumber
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 " VIM user interface
@@ -193,12 +197,6 @@ set textwidth=0   " No autowrapping
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Detect filetype, load optional filetype plugins, load optional indent rule file
 filetype plugin indent on
-
-" Python
-autocmd FileType python set number
-
-" Ruby
-autocmd FileType ruby set number
 
 " Enable syntax highlighting for jquery files
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
