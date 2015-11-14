@@ -97,7 +97,7 @@ set title
 " Check OS - needed for minor differences between OSX and Linux
 let os = substitute(system('uname'), "\n", "", "")
 
-" Always enable relative numbering
+" Always enable relative numbering (hybrid mode)
 set number
 set relativenumber
 
