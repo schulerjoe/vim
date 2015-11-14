@@ -43,7 +43,6 @@ Plugin 'git@github.com:edkolev/tmuxline.vim.git', {'name': 'statusline_tmuxline'
 
 Plugin 'git@github.com:vim-scripts/VimRepress.git', {'name': 'general_VimRepress'}
 Plugin 'git@github.com:vim-scripts/EasyGrep.git', {'name': 'general_EasyGrep'}
-Plugin 'git@github.com:vim-scripts/TwitVim.git', {'name': 'general_TwitVim'}
 Plugin 'git@github.com:tpope/vim-fugitive.git', {'name': 'general_fugitive'}
 Plugin 'git@github.com:vim-scripts/TaskList.vim.git', {'name': 'general_TaskList'}
 Plugin 'git@github.com:vim-scripts/file-line.git', {'name': 'general_file-line'}
@@ -369,17 +368,6 @@ map <leader>f :CtrlP<cr>
 " BufOnly
 " Fast closing of all buffers expect current
 nmap <leader>o :BufOnly<cr>
-
-" TwitVIM
-" Configuration
-if filereadable("~/vim_setup/twitter_account.vim")
-  :so ~/vim_setup/twitter_account.vim
-  let twitvim_api_root = "https://api.twitter.com/1"
-  nmap <leader>tp :BPosttoTwitter<cr>
-  nmap <leader>tf :FriendsTwitter<cr>
-  nmap <leader>tr :RepliesTwitter<cr>
-  nmap <leader>td :DMTwitter<cr>
-endif
 
 " Taglist
 " Exuberant Ctags; needed for Taglist

@@ -73,12 +73,6 @@ as well.
 
 VimRepress is a plugin for managing wordpress blog from Vim.
 
-### TwitVim
-* source: https://github.com/vim-scripts/TwitVim
-* directory: ./bundle/general_TwitVim/
-
-Allows you to post to Twitter and view Twitter timelines.
-
 ### fugitive
 * source: https://github.com/tpope/vim-fugitive
 * directory: ./bundle/general_fugitive/
