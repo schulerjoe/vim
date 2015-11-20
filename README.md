@@ -241,4 +241,4 @@ http://sourceforge.net/projects/dejavu/
 
 This font comes preinstalled in Ubuntu.
 
-For Powerline patched version check https://github.com/powerline/fonts
+For Powerline patched version check https://github.com/powerline/fonts or in ./fonts subdirectory of this repository
