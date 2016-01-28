@@ -211,10 +211,16 @@ nginx.vim highlights configuration files for nginx, the high-performance web ser
 
 ## STATUSLINE
 ### Airline
-* source: https://github.com/bling/vim-airline
+* source: https://github.com/vim-airline/vim-airline
 * directory: ./bundle/statusline_airline
 
 Lean & mean status/tabline for vim that's light as air
+
+### Airline
+* source: https://github.com/vim-airline/vim-airline-themes
+* directory: ./bundle/statusline_airline_themes
+
+Repository for airline themes
 
 ### tmuxline
 * source: https://github.com/edkolev/tmuxline.vim
