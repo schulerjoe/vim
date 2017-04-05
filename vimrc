@@ -33,14 +33,14 @@ call vundle#begin()
 " let Vundle manage Vundle
 Plugin 'git@github.com:gmarik/Vundle.vim.git', {'name': 'vundle'}
 
-Plugin 'git@github.com:chriskempson/vim-tomorrow-theme.git', {'name': 'colors_tomorow'}
-
 Plugin 'git@github.com:scrooloose/syntastic.git', {'name': 'syntax_syntastic'}
 Plugin 'git@github.com:vim-scripts/nginx.vim.git', {'name': 'syntax_nginx'}
+Plugin 'git@github.com:pprovost/vim-ps1.git', {'name': 'syntax_powershell'}
 
 Plugin 'git@github.com:vim-airline/vim-airline.git', {'name': 'statusline_airline'}
 Plugin 'git@github.com:vim-airline/vim-airline-themes.git', {'name': 'statusline_airline_themes'}
 Plugin 'git@github.com:edkolev/tmuxline.vim.git', {'name': 'statusline_tmuxline'}
+Plugin 'git@github.com:chriskempson/base16-vim', {'name': 'statusline_colors_base16'}
 
 Plugin 'git@github.com:vim-scripts/VimRepress.git', {'name': 'general_VimRepress'}
 Plugin 'git@github.com:vim-scripts/EasyGrep.git', {'name': 'general_EasyGrep'}
@@ -56,8 +56,6 @@ Plugin 'git@github.com:duff/vim-bufonly.git', {'name': 'general_bufonly'}
 Plugin 'git@github.com:rking/ag.vim.git', {'name': 'general_ag'}
 Plugin 'git@github.com:tsaleh/vim-align.git', {'name': 'general_align'}
 Plugin 'git@github.com:tpope/vim-surround.git', {'name': 'general_surround'}
-
-Plugin 'git@github.com:PProvost/vim-ps1.git', {'name': 'syntax_powershell'}
 
 call vundle#end()
 
@@ -141,13 +139,13 @@ syntax on
 " Settings when running GUI (MacVIM)
 if has('gui_running')
     " Tomorrow theme
-    colorscheme Tomorrow-Night-Eighties
+    colorscheme base16-tomorrow-night
 
   else
     " Settings when running CLI (iTerm2, PuTTY or SecureCRT)
     "Tomorrow theme
     set background=dark
-    colorscheme Tomorrow-Night-Eighties
+    colorscheme base16-tomorrow-night
 
 end
 
