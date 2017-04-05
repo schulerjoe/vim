@@ -38,7 +38,8 @@ Plugin 'git@github.com:chriskempson/vim-tomorrow-theme.git', {'name': 'colors_to
 Plugin 'git@github.com:scrooloose/syntastic.git', {'name': 'syntax_syntastic'}
 Plugin 'git@github.com:vim-scripts/nginx.vim.git', {'name': 'syntax_nginx'}
 
-Plugin 'git@github.com:bling/vim-airline.git', {'name': 'statusline_airline'}
+Plugin 'git@github.com:vim-airline/vim-airline.git', {'name': 'statusline_airline'}
+Plugin 'git@github.com:vim-airline/vim-airline-themes.git', {'name': 'statusline_airline_themes'}
 Plugin 'git@github.com:edkolev/tmuxline.vim.git', {'name': 'statusline_tmuxline'}
 
 Plugin 'git@github.com:vim-scripts/VimRepress.git', {'name': 'general_VimRepress'}
