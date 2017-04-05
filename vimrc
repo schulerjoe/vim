@@ -56,6 +56,8 @@ Plugin 'git@github.com:rking/ag.vim.git', {'name': 'general_ag'}
 Plugin 'git@github.com:tsaleh/vim-align.git', {'name': 'general_align'}
 Plugin 'git@github.com:tpope/vim-surround.git', {'name': 'general_surround'}
 
+Plugin 'git@github.com:PProvost/vim-ps1.git', {'name': 'syntax_powershell'}
+
 call vundle#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""
